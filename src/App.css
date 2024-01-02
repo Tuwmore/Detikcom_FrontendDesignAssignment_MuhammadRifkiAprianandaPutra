@@ -7,10 +7,73 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font{
+  font-family:'Montserrat-SemiBold';
+}
+
+.margin-header{
+  margin-left: auto;
+}
+
+.gap{
+  flex: auto;
+  align-items: flex-end;
+}
+
+.bg-hero {
+  background-image: url(./assets/background/Hero.png);
+  height:100vh;
+  width:100vw;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.bg-berita {
+  background-image: url(./assets/background/bottomBackground.png);
+  height:100vh;
+  width:100vw;
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.bg-footer {
+  background-color: rgb(40, 169, 151);
+  height:100vh;
+  width:100vw;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.about-container{
+  align-self: center;
+}
+
+.bg-all{
+  background-color: rgb(255, 255, 255);
+  height:100vh;
+  width:100vw;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.bg-sponsors{
+  background:linear-gradient(60deg, #326CFF 50%, #59FFB9);
+  height:100vh;
+  width:100vw;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.bg-container{
+  background:linear-gradient(45deg, #326CFF 20%, #59FFB9);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .App-header {
@@ -24,8 +87,58 @@
   color: white;
 }
 
+.navbar{
+  background-color:rgba(255, 255, 255, 0.7);
+  background-blend-mode:screen;
+}
+
+.sponsors-logo{
+  animation: sponsors-logo-scroll infinite 10s linear;
+}
+
+.scrolling-container {
+  width: 200%;
+  white-space: nowrap;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scrollText 10s linear infinite; /* Adjust the animation duration as needed */
+}
+
+.double-width-container {
+  margin-left: -50vw; /* Half of the viewport width */
+  margin-right: -50vw; /* Half of the viewport width */
+  overflow: hidden;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.gallery-container{
+  width: 90%;
+}
+
+.gallery-small-container{
+  width: 100%;
+  height: auto;
+}
+
+.berita-button {
+  margin-left: -5%; /* Half of the viewport width */
+  margin-right: -5%; /* Half of the viewport width */
+  overflow: hidden;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-102%);
+  }
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +147,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
