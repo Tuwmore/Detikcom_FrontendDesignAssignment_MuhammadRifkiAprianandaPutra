@@ -1,5 +1,6 @@
 .btn-register {
     background:linear-gradient(60deg, #326CFF 20%, #59FFB9);
+    border: none;
     color: white;
 }
 

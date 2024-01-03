@@ -16,7 +16,7 @@
 }
 
 .berita-backgrround{
-    background: linear-gradient(360deg, #326CFF 10%, #59FFB9 );
+    background: linear-gradient(24deg, #326CFF 10%, #59FFB9 );
 }
 
 .btn-beritaButton {
@@ -38,3 +38,90 @@
     font-size:medium;
     font-weight: bold;
 }
+
+.bg-beritaContainer{
+    background:rgba(255, 255, 255, 0);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    border: none;
+}
+
+.bg-beritaContainer:hover{
+    background:rgba(255, 255, 255, 0);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    animation: aboutAnimation 0.3s linear forwards;
+  }
+
+.image-transition{
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-transition:hover{
+    transform: scale(1.05); 
+}
+
+.bg-beritaContainer:hover .image-transition{
+    transform: scale(1.05);
+}
+
+
+.image-scale{
+    scale: 1.05;
+}
+
+.btn-beritaLink {
+    background:rgba(255, 255, 255, 0);
+    color: black;
+    text-align: left;
+}
+
+.btn-beritaLink:hover{
+    background:rgba(255, 255, 255, 0);
+    color: #FFC73C;
+    text-align: left;
+}
+
+.bg-beritaContainer:hover .btn-beritaLink{
+    background:rgba(255, 255, 255, 0);
+    color: #FFC73C;
+    text-align: left;
+}
+
+.font-cardBerita{
+    font-family:Montserrat;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.bg-beritaTaps {
+    background:rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.bg-beritaTaps:hover {
+    background:rgba(255, 255, 255, 0.7);
+    border-radius: 32;
+    color: white;
+    border: 10px rgb(255, 255, 255);
+}
+
+.bg-beritaTaps .nav-link .nav-item .active {
+    background:rgba(255, 255, 255, 0.7);
+    border-radius: 32;
+    color: white;
+    border: 10px rgb(255, 255, 255);
+}
+
+@keyframes aboutAnimation {
+    from {
+      transform: scale(100%);
+    }
+    to {
+      transform: scale(101%);
+    }
+  }

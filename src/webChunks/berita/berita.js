@@ -19,31 +19,39 @@ function Berita() {
             </Row>
 
             <br/>        
-            <Tab.Container defaultActiveKey="Artikel" >
-                <Row className='d-flex justify-content-center align-items-center' >
-                    <Col xs={{span:2}} className='berita-backgrround'>
-                        <Container style={{borderRadius:24}}>
-                            <Nav className="flex-column " >
-                                <Nav.Item >
-                                <Nav.Link eventKey="Artikel" className='font-berita-button' style={{textAlign:"center"}} >Artikel</Nav.Link>
-                                </Nav.Item>
-                            </Nav>
-                        </Container>
-                    </Col>
-                    <Col xs={{span:2}} className='berita-backgrround'>
-                        <Nav className="flex-column">
-                            <Nav.Item>
-                            <Nav.Link eventKey="Foto" className='font-berita-button ' style={{textAlign:"center"}}>Foto</Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                    </Col>
-                    <Col xs={{span:2}} className='berita-backgrround'>
-                        <Nav className="flex-column">
-                            <Nav.Item>
-                            <Nav.Link eventKey="Video" className='font-berita-button ' style={{textAlign:"center"}}>Video</Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                    </Col>
+            <Tab.Container defaultActiveKey="Artikel" id='bg-beritaTaps' className="bg-beritaTaps">
+                <Row className='d-flex justify-content-center align-items-center'>
+                    <Container className='berita-backgrround' style={tabsContainerStyle}>
+                        <Row className='d-flex justify-content-center align-items-center'>
+                            <Col xs={4} >
+                                <Container style={{borderRadius:24}} className='d-flex justify-content-center align-items-center bg-beritaTaps'>
+                                    <Nav >
+                                        <Nav.Item >
+                                        <Nav.Link eventKey="Artikel" className='font-berita-taps'  >Artikel</Nav.Link>
+                                        </Nav.Item>
+                                    </Nav>
+                                </Container>
+                            </Col>
+                            <Col xs={4}>
+                                <Container style={{borderRadius:24}} className='d-flex justify-content-center align-items-center bg-beritaTaps'>
+                                    <Nav>
+                                        <Nav.Item>
+                                        <Nav.Link eventKey="Foto" className='font-berita-taps' style={{textAlign:"center"}}>Foto</Nav.Link>
+                                        </Nav.Item>
+                                    </Nav>
+                                </Container>
+                            </Col>
+                            <Col xs={4}>
+                                <Container style={{borderRadius:24}} className='d-flex justify-content-center align-items-center bg-beritaTaps'>
+                                    <Nav>
+                                        <Nav.Item>
+                                        <Nav.Link eventKey="Video" className='font-berita-taps' style={{textAlign:"center"}}>Video</Nav.Link>
+                                        </Nav.Item>
+                                    </Nav>
+                                </Container>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Row>
                 <br/>
                 <Row className='d-flex justify-content-center align-items-center'>
@@ -83,6 +91,12 @@ const containerStyle = {
 const buttonStyle = {
     borderRadius: 32,
     width:250
+}
+
+const tabsContainerStyle = {
+    width: 600,
+    textAlign:"center",
+    borderRadius:32
 }
 
 export default Berita;
