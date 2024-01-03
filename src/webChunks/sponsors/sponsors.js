@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Figure from 'react-bootstrap/Figure';
 import SponsorsImages from "../../assets/logo/sponsor.png"
+import "./sponsorsTheme.css"
 
 function Sponsors (){
     return(
@@ -12,7 +13,7 @@ function Sponsors (){
                 <Col>
                 <br/>
                     <Row>
-                        <text style={{textAlign:"center"}}>
+                        <text style={{textAlign:"center"}} className='font-sponsors'>
                             DIDUKUNG OLEH
                         </text>
                     </Row>

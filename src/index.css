@@ -13,8 +13,13 @@ code {
 }
 
 @font-face {
-  font-family: "Montserrat-SemiBold";
-  src: local("Montserrat-SemiBold"),
-   url("./fonts/static/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+   url("./fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+ }
+
+ @font-face {
+  font-family: "Montserrat-italic";
+  src: local("Montserrat-italic"),
+   url("./fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
  }

@@ -1,0 +1,40 @@
+.berita-button-scale {
+    background: linear-gradient(360deg, #326CFF 10%, #59FFB9 );
+}
+
+.font-beritaTitle{
+    font-family: Montserrat;
+    font-size:xx-large;
+    font-weight:bolder;
+    color: black;
+}
+
+.font-berita-taps{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: white;
+}
+
+.berita-backgrround{
+    background: linear-gradient(360deg, #326CFF 10%, #59FFB9 );
+}
+
+.btn-beritaButton {
+    background-color: #FFC73C;
+    color: white;
+    border: 3px #FFC73C;
+    box-shadow: 0 0 10px #FFC73C;
+}
+
+.btn-beritaButton:hover {
+    background-color: rgb(251, 155, 37);
+    color: white;
+    border: 3px rgb(251, 155, 37);
+    box-shadow: 0 0 10px rgb(251, 155, 37);
+}
+
+.font-berita-button{
+    font-family: Montserrat;
+    font-size:medium;
+    font-weight: bold;
+}

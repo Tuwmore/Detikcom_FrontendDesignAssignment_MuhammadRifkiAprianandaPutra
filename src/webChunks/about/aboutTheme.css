@@ -1,0 +1,77 @@
+.font-title{
+    font-family: Montserrat-italic;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.font-description{
+    font-family: Montserrat;
+    color: white;
+    font-weight: 500;
+    font-size:small;
+}
+
+.btn-aboutButton {
+    background-color: #FFC73C;
+    color: white;
+    border: 3px #FFC73C;
+    box-shadow: 0 0 10px #FFC73C;
+}
+
+.btn-aboutButton:hover {
+    background-color: rgb(251, 155, 37);
+    color: white;
+    border: 3px rgb(251, 155, 37);
+    box-shadow: 0 0 10px rgb(251, 155, 37);
+}
+
+.font-aboutButton{
+    font-family: Montserrat;
+    font-size:medium;
+    font-weight: bold;
+}
+
+.bg-aboutContainer{
+    background:linear-gradient(45deg, #326CFF 20%, #59FFB9);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+}
+
+.bg-aboutContainer:hover{
+    background:linear-gradient(270deg, #326CFF 50%, #59FFB9);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #0056b3;
+    animation: aboutAnimation 0.3s linear forwards;
+  }
+
+.image-transition{
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-transition:hover{
+    transform: scale(1.05); 
+}
+
+.bg-aboutContainer:hover .image-transition{
+    transform: scale(1.05); 
+}
+
+.image-scale{
+    scale: 1.05;
+}
+
+@keyframes aboutAnimation {
+    from {
+      transform: scale(100%);
+    }
+    to {
+      transform: scale(101%);
+    }
+  }

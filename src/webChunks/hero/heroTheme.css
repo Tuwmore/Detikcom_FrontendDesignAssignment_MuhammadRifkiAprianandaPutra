@@ -11,3 +11,9 @@
     border: 3px rgb(251, 155, 37);
     box-shadow: 0 0 10px rgb(251, 155, 37);
 }
+
+.font-hero{
+    font-family: Montserrat;
+    font-size:medium;
+    font-weight: bold;
+}

@@ -21,7 +21,7 @@ function Hero () {
             </Figure>
             </Row>
             <Row xs={3} md={4} lg={6} style={{paddingLeft:10}}>
-                <Button variant="heroButton" className='font' style={buttonStyele}>Tentang Acara</Button>{' '}
+                <Button variant="heroButton" className='font-hero' style={buttonStyele}>Tentang Acara</Button>{' '}
             </Row>
         </Container>
       </div>

@@ -7,6 +7,7 @@ import galeri3 from "../../assets/images/galeri3.png";
 import galeri4 from "../../assets/images/galeri4.png";
 import SmallImages from './smallImage';
 import { Container, Row } from 'react-bootstrap';
+import "./galleryTheme.css"
 
 function Gallery() {
   return (
@@ -14,7 +15,7 @@ function Gallery() {
         <Container>
             <br/>
             <Row>
-                <text className='font ' style={{textAlign:"center"}}> GALERI SUDIRMAN RUN 2022 </text>
+                <text className='font-galleryTitle ' style={{textAlign:"center"}}> GALERI SUDIRMAN RUN 2022 </text>
             </Row>
 
             <br/>
