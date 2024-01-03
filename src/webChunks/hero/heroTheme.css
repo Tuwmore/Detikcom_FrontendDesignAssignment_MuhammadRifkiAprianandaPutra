@@ -1,0 +1,13 @@
+.btn-heroButton {
+    background-color: #FFC73C;
+    color: white;
+    border: 3px #FFC73C;
+    box-shadow: 0 0 10px #FFC73C;
+}
+
+.btn-heroButton:hover {
+    background-color: rgb(251, 155, 37);
+    color: white;
+    border: 3px rgb(251, 155, 37);
+    box-shadow: 0 0 10px rgb(251, 155, 37);
+}

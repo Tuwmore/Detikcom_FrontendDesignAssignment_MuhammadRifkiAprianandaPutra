@@ -1,11 +1,10 @@
 import React from 'react';
+import "./heroTheme.css"
 import Container from 'react-bootstrap/Container';
 import Figure from 'react-bootstrap/Figure';
 import Logo from "../../assets/logo/heroLogo.png"
 import Button from 'react-bootstrap/Button';
-
-import {Image, Row, Stack} from "react-bootstrap"
-import HeroImage from '../../assets/background/Hero.png'
+import {Row} from "react-bootstrap"
 
 function Hero () {
     return (
@@ -22,7 +21,7 @@ function Hero () {
             </Figure>
             </Row>
             <Row xs={3} md={4} lg={6} style={{paddingLeft:10}}>
-                <Button variant="primary" className='font'>Tentang Acara</Button>{' '}
+                <Button variant="heroButton" className='font' style={buttonStyele}>Tentang Acara</Button>{' '}
             </Row>
         </Container>
       </div>
@@ -37,5 +36,10 @@ function Hero () {
     justifyContent: 'center',
     color: 'black', // Text color on top of the background image
   };
+
+  const buttonStyele = {
+    marginInLine: 10,
+    borderRadius: 100,
+  }
 
 export default Hero;

@@ -127,8 +127,8 @@
 }
 
 .berita-button {
-  margin-left: -5%; /* Half of the viewport width */
-  margin-right: -5%; /* Half of the viewport width */
+  margin-left: -5%;
+  margin-right: -5%;
   overflow: hidden;
 }
 

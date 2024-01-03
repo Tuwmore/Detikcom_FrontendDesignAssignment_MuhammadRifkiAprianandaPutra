@@ -1,0 +1,21 @@
+.btn-register {
+    background:linear-gradient(60deg, #326CFF 20%, #59FFB9);
+    color: white;
+    border: 3px linear-gradient(60deg, #326CFF 20%, #59FFB9);
+}
+
+.btn-register:hover {
+    background: linear-gradient(270deg, #326CFF 10%, #59FFB9) scroll;
+    border: 3px linear-gradient(270deg, #326CFF 10%, #59FFB9);
+    color:azure;
+    animation: registerAnimation 0.3s linear forwards; /* Adjust the animation duration as needed */
+}
+
+@keyframes registerAnimation {
+    from {
+      transform: scale(100%);
+    }
+    to {
+      transform: scale(102%);
+    }
+  }
